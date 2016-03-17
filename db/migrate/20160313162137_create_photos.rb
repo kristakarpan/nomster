@@ -4,6 +4,8 @@ class CreatePhotos < ActiveRecord::Migration
       t.text :caption
       t.belongs_to :place, index: true
 
+	  t.integer :user_id
+      t.integer :place_id
       t.timestamps
     end
   end
